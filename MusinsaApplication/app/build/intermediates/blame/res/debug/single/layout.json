@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/ibella/Documents/android-project/mvvm-kotlin-training/MusinsaApplication/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_search_user.xml",
+        "source": "/Users/ibella/Documents/android-project/mvvm-kotlin-training/MusinsaApplication/app/src/main/res/layout/activity_search_user.xml"
+    },
+    {
+        "merged": "/Users/ibella/Documents/android-project/mvvm-kotlin-training/MusinsaApplication/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_meeting_room.xml",
+        "source": "/Users/ibella/Documents/android-project/mvvm-kotlin-training/MusinsaApplication/app/src/main/res/layout/activity_meeting_room.xml"
+    },
+    {
+        "merged": "/Users/ibella/Documents/android-project/mvvm-kotlin-training/MusinsaApplication/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_user_item.xml",
+        "source": "/Users/ibella/Documents/android-project/mvvm-kotlin-training/MusinsaApplication/app/src/main/res/layout/view_user_item.xml"
+    },
+    {
+        "merged": "/Users/ibella/Documents/android-project/mvvm-kotlin-training/MusinsaApplication/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/users_fragment.xml",
+        "source": "/Users/ibella/Documents/android-project/mvvm-kotlin-training/MusinsaApplication/app/src/main/res/layout/users_fragment.xml"
+    },
+    {
+        "merged": "/Users/ibella/Documents/android-project/mvvm-kotlin-training/MusinsaApplication/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/reservation_progress.xml",
+        "source": "/Users/ibella/Documents/android-project/mvvm-kotlin-training/MusinsaApplication/app/src/main/res/layout/reservation_progress.xml"
+    },
+    {
+        "merged": "/Users/ibella/Documents/android-project/mvvm-kotlin-training/MusinsaApplication/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_meeting_room_item.xml",
+        "source": "/Users/ibella/Documents/android-project/mvvm-kotlin-training/MusinsaApplication/app/src/main/res/layout/view_meeting_room_item.xml"
+    },
+    {
+        "merged": "/Users/ibella/Documents/android-project/mvvm-kotlin-training/MusinsaApplication/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/favourties_fragment.xml",
+        "source": "/Users/ibella/Documents/android-project/mvvm-kotlin-training/MusinsaApplication/app/src/main/res/layout/favourties_fragment.xml"
+    }
+]

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="java.util.List" />
+        <import type="android.util.SparseBooleanArray" />
+        <variable name="isInTimes" type="SparseBooleanArray" />
+
+        <import type="com.hyejin.musinsa.musinsaapp.domain.local.model.Reservation" />
+        <variable name="reservations" type="List&lt;Reservation&gt;" />
+        <variable name="nowPosition" type="Integer" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="11dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/parent"
+        >
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="4dp"
+            android:id="@+id/progress_1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@{isInTimes[0] ? @color/deep_sky_blue : @color/brownish_grey}"
+            android:layout_marginTop="35dp"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            android:layout_marginStart="15dp"
+            />
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="4dp"
+            android:id="@+id/progress_2"
+            app:layout_constraintLeft_toRightOf="@id/progress_1"
+            app:layout_constraintTop_toTopOf="@id/progress_1"
+            android:background="@{isInTimes[1] ? @color/deep_sky_blue : @color/brownish_grey}"
+            />
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="4dp"
+            android:id="@+id/progress_3"
+            app:layout_constraintLeft_toRightOf="@id/progress_2"
+            app:layout_constraintTop_toTopOf="@id/progress_1"
+            android:background="@{isInTimes[2] ? @color/deep_sky_blue : @color/brownish_grey}"
+            />
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="4dp"
+            android:id="@+id/progress_4"
+            app:layout_constraintLeft_toRightOf="@id/progress_3"
+            app:layout_constraintTop_toTopOf="@id/progress_1"
+            android:background="@{isInTimes[3] ? @color/deep_sky_blue : @color/brownish_grey}"
+            />
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="4dp"
+            android:id="@+id/progress_5"
+            app:layout_constraintLeft_toRightOf="@id/progress_4"
+            app:layout_constraintTop_toTopOf="@id/progress_1"
+            android:background="@{isInTimes[4] ? @color/deep_sky_blue : @color/brownish_grey}"
+            />
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="4dp"
+            android:id="@+id/progress_6"
+            app:layout_constraintLeft_toRightOf="@id/progress_5"
+            app:layout_constraintTop_toTopOf="@id/progress_1"
+            android:background="@{isInTimes[5] ? @color/deep_sky_blue : @color/brownish_grey}"
+            />
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="4dp"
+            android:id="@+id/progress_7"
+            app:layout_constraintLeft_toRightOf="@id/progress_6"
+            app:layout_constraintTop_toTopOf="@id/progress_1"
+            android:background="@{isInTimes[6] ? @color/deep_sky_blue : @color/brownish_grey}"
+            />
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="4dp"
+            android:id="@+id/progress_8"
+            app:layout_constraintLeft_toRightOf="@id/progress_7"
+            app:layout_constraintTop_toTopOf="@id/progress_1"
+            android:background="@{isInTimes[7] ? @color/deep_sky_blue : @color/brownish_grey}"
+            />
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="4dp"
+            android:id="@+id/progress_9"
+            app:layout_constraintLeft_toRightOf="@id/progress_8"
+            app:layout_constraintTop_toTopOf="@id/progress_1"
+            android:background="@{isInTimes[8] ? @color/deep_sky_blue : @color/brownish_grey}"
+            />
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="4dp"
+            android:id="@+id/progress_10"
+            app:layout_constraintLeft_toRightOf="@id/progress_9"
+            app:layout_constraintTop_toTopOf="@id/progress_1"
+            android:background="@{isInTimes[9] ? @color/deep_sky_blue : @color/brownish_grey}"
+            />
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="4dp"
+            android:id="@+id/progress_11"
+            app:layout_constraintLeft_toRightOf="@id/progress_10"
+            app:layout_constraintTop_toTopOf="@id/progress_1"
+            android:background="@{isInTimes[10] ? @color/deep_sky_blue : @color/brownish_grey}"
+            />
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="4dp"
+            android:id="@+id/progress_12"
+            app:layout_constraintLeft_toRightOf="@id/progress_11"
+            app:layout_constraintTop_toTopOf="@id/progress_1"
+            android:background="@{isInTimes[11] ? @color/deep_sky_blue : @color/brownish_grey}"
+            />
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="4dp"
+            android:id="@+id/progress_13"
+            app:layout_constraintLeft_toRightOf="@id/progress_12"
+            app:layout_constraintTop_toTopOf="@id/progress_1"
+            android:background="@{isInTimes[12] ? @color/deep_sky_blue : @color/brownish_grey}"
+            />
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="4dp"
+            android:id="@+id/progress_14"
+            app:layout_constraintLeft_toRightOf="@id/progress_13"
+            app:layout_constraintTop_toTopOf="@id/progress_1"
+            android:background="@{isInTimes[13] ? @color/deep_sky_blue : @color/brownish_grey}"
+            />
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="4dp"
+            android:id="@+id/progress_15"
+            app:layout_constraintLeft_toRightOf="@id/progress_14"
+            app:layout_constraintTop_toTopOf="@id/progress_1"
+            android:background="@{isInTimes[14] ? @color/deep_sky_blue : @color/brownish_grey}"
+            />
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="4dp"
+            android:id="@+id/progress_16"
+            app:layout_constraintLeft_toRightOf="@id/progress_15"
+            app:layout_constraintTop_toTopOf="@id/progress_1"
+            android:background="@{isInTimes[15] ? @color/deep_sky_blue : @color/brownish_grey}"
+            />
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="4dp"
+            android:id="@+id/progress_17"
+            app:layout_constraintLeft_toRightOf="@id/progress_16"
+            app:layout_constraintTop_toTopOf="@id/progress_1"
+            android:background="@{isInTimes[16] ? @color/deep_sky_blue : @color/brownish_grey}"
+            />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="4dp"
+            android:id="@+id/progress_18"
+            app:layout_constraintLeft_toRightOf="@id/progress_17"
+            app:layout_constraintTop_toTopOf="@id/progress_1"
+            android:background="@{isInTimes[17] ? @color/deep_sky_blue : @color/brownish_grey}"
+            android:layout_marginEnd="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ProgressNumber"
+            android:text="9"
+            android:id="@+id/num_1"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="@id/progress_1"
+            app:layout_constraintTop_toBottomOf="@id/progress_1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ProgressNumber"
+            android:text="10"
+            android:id="@+id/num_2"
+            app:layout_constraintLeft_toLeftOf="@id/progress_2"
+            app:layout_constraintRight_toRightOf="@id/progress_3"
+            app:layout_constraintTop_toTopOf="@id/num_1"
+            app:layout_constraintBottom_toBottomOf="@id/num_1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ProgressNumber"
+            android:text="11"
+            android:id="@+id/num_3"
+            app:layout_constraintLeft_toLeftOf="@id/progress_4"
+            app:layout_constraintTop_toTopOf="@id/num_1"
+            app:layout_constraintBottom_toBottomOf="@id/num_1"
+            app:layout_constraintRight_toRightOf="@id/progress_5"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ProgressNumber"
+            android:text="12"
+            android:id="@+id/num_4"
+            app:layout_constraintLeft_toLeftOf="@id/progress_6"
+            app:layout_constraintTop_toTopOf="@id/num_1"
+            app:layout_constraintBottom_toBottomOf="@id/num_1"
+            app:layout_constraintRight_toRightOf="@id/progress_7"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ProgressNumber"
+            android:text="13"
+            android:id="@+id/num_5"
+            app:layout_constraintLeft_toLeftOf="@id/progress_8"
+            app:layout_constraintTop_toTopOf="@id/num_1"
+            app:layout_constraintBottom_toBottomOf="@id/num_1"
+            app:layout_constraintRight_toRightOf="@id/progress_9"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ProgressNumber"
+            android:text="14"
+            android:id="@+id/num_6"
+            app:layout_constraintLeft_toLeftOf="@id/progress_10"
+            app:layout_constraintTop_toTopOf="@id/num_1"
+            app:layout_constraintBottom_toBottomOf="@id/num_1"
+            app:layout_constraintRight_toRightOf="@id/progress_11"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ProgressNumber"
+            android:text="15"
+            android:id="@+id/num_7"
+            app:layout_constraintLeft_toLeftOf="@id/progress_12"
+            app:layout_constraintTop_toTopOf="@id/num_1"
+            app:layout_constraintBottom_toBottomOf="@id/num_1"
+            app:layout_constraintRight_toRightOf="@id/progress_13"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ProgressNumber"
+            android:text="16"
+            android:id="@+id/num_8"
+            app:layout_constraintLeft_toLeftOf="@id/progress_14"
+            app:layout_constraintTop_toTopOf="@id/num_1"
+            app:layout_constraintBottom_toBottomOf="@id/num_1"
+            app:layout_constraintRight_toRightOf="@id/progress_15"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ProgressNumber"
+            android:text="17"
+            android:id="@+id/num_9"
+            app:layout_constraintLeft_toLeftOf="@id/progress_16"
+            app:layout_constraintTop_toTopOf="@id/num_1"
+            app:layout_constraintBottom_toBottomOf="@id/num_1"
+            app:layout_constraintRight_toRightOf="@id/progress_17"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ProgressNumber"
+            android:text="18"
+            android:id="@+id/num_10"
+            app:layout_constraintTop_toTopOf="@id/num_1"
+            app:layout_constraintBottom_toBottomOf="@id/num_1"
+            app:layout_constraintRight_toRightOf="@id/progress_18"
+            />
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:id="@+id/time_arrow"
+            android:background="@color/very_light_pink_two"
+            app:layout_constraintBottom_toTopOf="@id/progress_1"
+            app:layout_constraintLeft_toLeftOf="@id/progress_1"
+            arrow_position="@{nowPosition}"/>
+
+        <TextView
+            android:id="@+id/now_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="6sp"
+            android:text="현재시간"
+            android:textColor="@color/brown_grey"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toTopOf="@+id/time_arrow"
+            app:layout_constraintLeft_toLeftOf="@id/time_arrow"
+            app:layout_constraintRight_toRightOf="@id/time_arrow"
+            text_position="@{nowPosition}"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

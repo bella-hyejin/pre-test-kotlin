@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Musinsa Application</string>
+    <string name="go_to_github">To search user, go to Github</string>
+    <string name="go_to_meeting">Search a meeting room</string>
+
+    <string name="user_name">[Default Name]</string>
+    <string name="user_score">0000.0000</string>
+
+    <string name="title_users">users</string>
+    <string name="title_favourites">Favourites</string>
+
+    <string name="enter_username">Enter your user name.</string>
+
+    <string name="header_sample_date">02월 12일 (수)</string>
+    <string name="title_available_meeting_room">현재 사용 가능 회의실&#160;</string>
+    <string name="reservation_available">예약가능</string>
+    <string name="outside_meeting">외부미팅</string>
+    <string name="my_reservation">내 예약</string>
+    <string name="now_time">현재시간</string>
+</resources>

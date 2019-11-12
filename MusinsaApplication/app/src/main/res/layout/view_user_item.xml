@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="user"
+            type="com.hyejin.musinsa.musinsaapp.domain.local.model.User" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_user_height"
+        android:padding="@dimen/item_whole_padding">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="@dimen/icon_git_user"
+            android:layout_height="@dimen/icon_git_user"
+            android:src="@drawable/default_icon"
+            bind_avata="@{user.avatar_url}"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/user_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.login}"
+            android:textSize="@dimen/string_user_name"
+            android:layout_marginLeft="@dimen/item_margin"
+            app:layout_constraintLeft_toRightOf="@id/user_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/user_score"
+            />
+
+        <TextView
+            android:id="@+id/user_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.score.toString()}"
+            android:textSize="@dimen/string_user_score"
+            android:layout_marginLeft="@dimen/item_margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/user_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/user_favorite_off"
+            android:layout_width="@dimen/icon_fravourite"
+            android:layout_height="@dimen/icon_fravourite"
+            android:src="@drawable/favourite_off"
+            disable_fav="@{user.fav}"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageView
+            android:id="@+id/user_favorite_on"
+            android:layout_width="@dimen/icon_fravourite"
+            android:layout_height="@dimen/icon_fravourite"
+            android:src="@drawable/favourite_on"
+            active_fav="@{user.fav}"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
